@@ -13,7 +13,9 @@ font-family: 'Poppins', sans-serif;
     text-decoration: none;
     color: #0F0A0A;
 }
-body{
+.main-container{
+    width: 100vw;
+    height: 100vh;
     background: linear-gradient(135deg, #FAD7A1 0%, #E96D71 100%);
     background-size: auto;
     background-repeat: no-repeat;
@@ -75,7 +77,7 @@ nav{
 }
 
 .container-content{
-    height:85vh;
+    height:65vh;
     width:100vw;
     padding: 0 128px;
     display:grid;

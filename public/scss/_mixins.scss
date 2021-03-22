@@ -1,0 +1,16 @@
+
+@mixin text-Osw{
+    font-family: $Oxygen;
+    font-style: normal;
+    font-weight: 700;
+}
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin grid-center {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}

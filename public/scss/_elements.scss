@@ -1,0 +1,39 @@
+@import "mixins";
+@import "fonts";
+
+.bttn-p{
+    @include flex-center;
+    @extend .font-button;
+    width: 8em;
+    height: 3.5em;
+
+    background: rgba(66, 226, 184, 1);
+    border: 0.15em solid #0F0A0A;
+    box-shadow: -4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 6em;
+}
+
+.bttn-s{
+    
+    @include grid-center;
+    @extend .font-button;
+    
+    grid-template-columns: repeat(2,min-content);
+    column-gap: 8px;
+    
+    $size-predetermined:14px;
+    font-size: $size-predetermined;
+
+    height: 4em;
+    width: 10em;
+    border-radius: 6em;
+
+    border: 0.15em solid #0F0A0A;
+    box-sizing: border-box;
+    filter: drop-shadow(-4px 4px 14px rgba(0, 0, 0, 0.25));
+    border-radius: 90px;
+
+    .fab{
+        font-size: $size-predetermined + 2;
+    }
+}

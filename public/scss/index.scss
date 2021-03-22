@@ -8,142 +8,23 @@
     color: #0F0A0A;
 }
 //Global & MIXINS
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Poppins:wght@900&display=swap');
-
-$Poppins: 'Poppins';
-$Oxygen: 'Oxygen';
-
-@mixin text-Osw{
-    font-family: $Oxygen;
-    font-style: normal;
-    font-weight: 700;
-}
-
-.headline-1{
-    @include text-Osw;
-    font-size: 95px;
-    letter-spacing: -0.015em;
-}
-.headline-2{
-    @extend .headline-1;
-    font-size: 59px;
-    letter-spacing: -0.005em;
-}
-.headline-3{
-    @include text-Osw;
-    font-size: 48px;
-}
-.headline-4{
-    @include text-Osw;
-    font-size: 34px;
-}
-.headline-5{
-    @include text-Osw;
-    font-size: 24px;
-}
-
-
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-@mixin grid-center {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
-@mixin button_primary {
-    @include flex-center;
-    font-size: 14px;
-    width: 8em;
-    height: 3.5em;
-    font-family: $Oxygen;
-    font-weight: 700;
-    letter-spacing: 0.18em;
-
-    background: rgba(66, 226, 184, 1);
-    border: 0.15em solid #0F0A0A;
-    box-shadow: -4px 4px 14px rgba(0, 0, 0, 0.25);
-    border-radius: 6em;
-}
-
-@mixin button_secondary {
-    $size-predetermined:14px;
-    
-    @include grid-center;
-
-    grid-template-columns: repeat(2,min-content);
-    column-gap: 8px;
-
-    font-family: $Oxygen;
-    font-size: $size-predetermined;
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: 0.18em;
-
-    height: 4em;
-    width: 10em;
-    border-radius: 6em;
-
-    border: 0.15em solid #0F0A0A;
-    box-sizing: border-box;
-    filter: drop-shadow(-4px 4px 14px rgba(0, 0, 0, 0.25));
-    border-radius: 90px;
-
-    .fab{
-        font-size: $size-predetermined + 2;
-    }
-}
+@import "mixins";
+@import "elements";
+@import "fonts";
 
 .titles{
     height: 400px;
+    display: grid;
+    grid-template-rows: repeat(5,min-content);
+    row-gap: 16px;
 }
 body{
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-flow: column;
 }
 
-.bttn-p{
-    @include flex-center;
-    @include text-Osw;
-    font-size: 14px;
-    width: 8em;
-    height: 3.5em;
-    letter-spacing: 0.18em;
 
-    background: rgba(66, 226, 184, 1);
-    border: 0.15em solid #0F0A0A;
-    box-shadow: -4px 4px 14px rgba(0, 0, 0, 0.25);
-    border-radius: 6em;
-}
 
-.bttn-s{
-    $size-predetermined:14px;
-    
-    @include grid-center;
-    @include text-Osw;
-
-    grid-template-columns: repeat(2,min-content);
-    column-gap: 8px;
-
-    font-size: $size-predetermined;
-    letter-spacing: 0.18em;
-
-    height: 4em;
-    width: 10em;
-    border-radius: 6em;
-
-    border: 0.15em solid #0F0A0A;
-    box-sizing: border-box;
-    filter: drop-shadow(-4px 4px 14px rgba(0, 0, 0, 0.25));
-    border-radius: 90px;
-
-    .fab{
-        font-size: $size-predetermined + 2;
-    }
-}

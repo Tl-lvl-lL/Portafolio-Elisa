@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Poppins:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Poppins:wght@900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -36,27 +37,42 @@
   font-weight: 700;
   font-size: 24px; }
 
-.titles {
-  height: 400px; }
+.caption {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.4000000059604645px;
+  text-align: center; }
 
-body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column; }
+.body-1, .body-2 {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 700;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.005em;
+  text-align: left; }
+
+.body-2 {
+  font-size: 14px;
+  letter-spacing: 0.0025em;
+  text-align: left; }
+
+.font-button, .bttn-p, .bttn-s {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.18em; }
 
 .bttn-p {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Oxygen";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
   width: 8em;
   height: 3.5em;
-  letter-spacing: 0.18em;
   background: #42e2b8;
   border: 0.15em solid #0F0A0A;
   box-shadow: -4px 4px 14px rgba(0, 0, 0, 0.25);
@@ -66,13 +82,9 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
-  font-family: "Oxygen";
-  font-style: normal;
-  font-weight: 700;
   grid-template-columns: repeat(2, min-content);
   column-gap: 8px;
   font-size: 14px;
-  letter-spacing: 0.18em;
   height: 4em;
   width: 10em;
   border-radius: 6em;
@@ -82,3 +94,71 @@ body {
   border-radius: 90px; }
   .bttn-s .fab {
     font-size: 16px; }
+
+.headline-1, .headline-2 {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 95px;
+  letter-spacing: -0.015em; }
+
+.headline-2 {
+  font-size: 59px;
+  letter-spacing: -0.005em; }
+
+.headline-3 {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px; }
+
+.headline-4 {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px; }
+
+.headline-5 {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px; }
+
+.caption {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.4000000059604645px;
+  text-align: center; }
+
+.body-1, .body-2 {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 700;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.005em;
+  text-align: left; }
+
+.body-2 {
+  font-size: 14px;
+  letter-spacing: 0.0025em;
+  text-align: left; }
+
+.font-button, .bttn-p, .bttn-s {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.18em; }
+
+.titles {
+  height: 400px;
+  display: grid;
+  grid-template-rows: repeat(5, min-content);
+  row-gap: 16px; }
+
+body {
+  height: 100vh; }

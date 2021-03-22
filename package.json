@@ -5,11 +5,15 @@
   "main": "index.js",
   "scripts": {
     "build-css": "node-sass public/scss/index.scss public/css/style.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "sass": "node-sass --watch delete.scss --output css"
   },
   "author": "Me",
   "license": "MIT",
   "dependencies": {
     "node-class": "^0.3.12"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.6.0"
   }
 }

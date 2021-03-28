@@ -5,13 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../scss/style.css">
     <script src="https://kit.fontawesome.com/556bf0993e.js" crossorigin="anonymous"></script>
     <title>test</title>
+    <style>
+        .titles {
+            height: 100vh;
+            display: grid;
+            grid-template-rows: repeat(5, min-content);
+            row-gap: 16px;
+        }
+
+        body {
+            height: 200vh;
+            font-size: 50px;
+        }
+
+        .elb {
+            margin: 10px;
+        }
+    </style>
 </head>
 
 <body>
     <div class="titles">
+        <h1 class=headline-1>Headline 1</h1>
+        <h1 class=headline-1>Headline 1</h1>
         <h1 class=headline-1>Headline 1</h1>
         <h2 class=headline-2>Headline 2</h2>
         <h3 class=headline-3>Headline 3</h3>
@@ -21,8 +40,11 @@
     <div class="body-1">Body 1</div>
     <div class="caption">cap</div>
     <div class="body-2">Body 2</div>
-    <a class="elb bttn-s" href=#><i class="fab fa-github"></i>BUTTON</a>
+    <a class="bttn-s" href=#><i class="fab fa-github"></i>BUTTON</a>
     <a class=bttn-p href="#">BUTTON</a>
+
+    <p class=caption> Lorem ipsum dolor sit amet.</p>
+    <p> Lorem ipsum dolor sit amet.</p>
 </body>
 
 </html>

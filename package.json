@@ -6,7 +6,7 @@
   "scripts": {
     "build-css": "node-sass public/scss/index.scss public/css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
-    "sass": "node-sass --watch delete.scss --output css"
+    "sass": "node-sass --watch public/scss/index.scss public/css/style.css"
   },
   "author": "Me",
   "license": "MIT",

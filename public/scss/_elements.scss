@@ -1,12 +1,12 @@
-@import "mixins";
-@import "fonts";
 
 .bttn-p{
-    @include flex-center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @extend .font-button;
-    width: 8em;
+    font-size: .7rem;
+    width: 18em;
     height: 3.5em;
-
     background: rgba(66, 226, 184, 1);
     border: 0.15em solid #0F0A0A;
     box-shadow: -4px 4px 14px rgba(0, 0, 0, 0.25);
@@ -14,16 +14,15 @@
 }
 
 .bttn-s{
-    
-    @include grid-center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
     @extend .font-button;
     
     grid-template-columns: repeat(2,min-content);
     column-gap: 8px;
     
-    $size-predetermined:14px;
-    font-size: $size-predetermined;
-
+    font-size: 0.9em;
     height: 4em;
     width: 10em;
     border-radius: 6em;
@@ -34,6 +33,16 @@
     border-radius: 90px;
 
     .fab{
-        font-size: $size-predetermined + 2;
+        font-size: 1.2em;
     }
+}
+.bttn-icon{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color : #42E2B8;
+    border: 2px solid black;
+    border-radius:4px;
 }

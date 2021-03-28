@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Poppins:wght@900&display=swap');
+ 
+$Poppins: 'Poppins';
+$Oxygen: 'Oxygen';
+
+@mixin text-style($size,$height,$spacing:0){  
+    font-family: $Oxygen;
+    font-size: $size;
+    letter-spacing: $spacing;
+    font-style: normal;
+    font-weight: bold;
+    line-height: $height;
+}
+
+.headline-1{
+    @include text-style(4.75rem,154px,-0.015em);
+
+}
+.headline-2{
+    @include text-style(3rem,95px,-0.005em);
+}
+.headline-3{
+    @include text-style(2.4rem,78px);
+}
+.headline-4{
+    @include text-style(1.8rem,55px);
+}
+.headline-5{
+    @include text-style(1.2rem,39px);
+}
+.caption{
+    @include text-style(0.6rem,19px);
+}
+.body-1{
+    @include text-style(0.8rem,1.3rem,0.05em);
+    font-weight: 400;
+}
+.body-2{
+    @include text-style(0.6rem,1.2rem,025em);
+    font-weight: 400;
+
+}
+.font-button{
+    @include text-style(0.7em,23px,1.25px);
+}
